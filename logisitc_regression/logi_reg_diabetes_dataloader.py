@@ -57,7 +57,7 @@ if __name__ == '__main__':
     losses = []
     training_epochs = 10
     batch_size = 64
-    train_loader = load_data('data/diabetes.csv', batch_size, use_cuda)
+    train_loader = load_data('../data/diabetes.csv', batch_size, use_cuda)
     model = LogiRegDiabetesModel().to(device)
     optimizer = optim.SGD(model.parameters(), lr=0.01)
 

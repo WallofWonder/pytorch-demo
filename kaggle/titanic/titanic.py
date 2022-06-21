@@ -66,6 +66,6 @@ class TitanicDataset(Dataset):
         return self.x_data[index], self.y_data[index]
 
 
-data = TitanicDataset('data/titanic/train.csv')
+data = TitanicDataset('../../data/titanic/train.csv')
 
 model = Titanic()
